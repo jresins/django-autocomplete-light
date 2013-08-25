@@ -112,7 +112,7 @@ class AutocompleteTestCase(unittest.TestCase):
             try:
                 valid = form.is_valid()
             except TypeError:
-                print self.__class__, test, self.get_widget_tests()
+                print (self.__class__, test, self.get_widget_tests())
                 raise
 
             self.assertEqual(
